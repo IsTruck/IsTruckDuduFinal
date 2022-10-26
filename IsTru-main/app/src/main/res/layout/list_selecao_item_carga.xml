@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#040450"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_teste"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_desc_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Peso: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/text_Peso"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_peso">
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/text_desc_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Material: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_desc_peso">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_material"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_material"
+        app:layout_constraintTop_toBottomOf="@id/text_Peso"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_desc_endOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Endereço Origem: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_desc_material">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_endOrigem"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_endOrigem"
+        app:layout_constraintTop_toBottomOf="@id/text_material">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_desc_endDestinatário"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Endereço Destinatário: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_desc_endOrigem">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_endDestinatario"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_endDestinatário"
+        app:layout_constraintTop_toBottomOf="@id/text_endOrigem">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_desc_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Preço: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_desc_endDestinatário">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_preco"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_preco"
+        app:layout_constraintTop_toBottomOf="@id/text_endDestinatario">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_desc_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Numero: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_preco">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_Selec_numero"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_numero"
+        app:layout_constraintTop_toBottomOf="@id/text_preco">
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

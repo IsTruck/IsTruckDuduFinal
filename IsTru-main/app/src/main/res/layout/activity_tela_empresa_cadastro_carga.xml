@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040450"
+    tools:context=".TelaEmpresaCadastroCarga">
+
+
+    <TextView
+        android:id="@+id/text_Informacao_Carga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informações da carga:"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/white"
+        android:textSize="24dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_Peso"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="  Peso"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/text_Informacao_Carga" />
+
+    <EditText
+        android:id="@+id/edit_Material"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="  Material"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_Peso" />
+
+    <EditText
+        android:id="@+id/edit_Origem"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="  Endereço de Origem"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_Material" />
+
+    <EditText
+        android:id="@+id/edit_Destino"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="  Endereço do Destino"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_Origem" />
+
+    <EditText
+        android:id="@+id/edit_Preco"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="  Preço"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_Destino" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_Limpar"
+        style="@style/cadastrar_senha"
+        android:text="Limpar"
+        android:layout_width="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/edit_Preco"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_Preco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_Cadastrar_Carga"
+        style="@style/cadastrar_senha"
+        android:text="@string/cadastrar"
+        android:layout_width="160dp"
+        app:layout_constraintEnd_toEndOf="@id/edit_Preco"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_Preco" />
+
+    <TextView
+        android:id="@+id/text_Cargas_Cadastradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargas Cadastradas:"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/bt_Limpar"
+        android:textSize="24dp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text_Cargas_Cadastradas"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/List_Cargas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_Cargas_Cadastradas">
+        </ListView>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
